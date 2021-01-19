@@ -1,0 +1,122 @@
+* {
+    font-family: verdana;
+    margin: 0;
+}
+
+body {
+    background: black;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+.wrapper1 {
+    display: flex;
+    color: gainsboro;
+    text-align:justify;
+}
+
+.heading {
+    height: 100px;
+    flex: 1 0 200px; /* incorporates flex-grow, flex-shrink, flex-basis */
+    background: chocolate;
+    color: wheat;
+    text-align: center;
+}
+
+.boxleft {
+    flex: 1 1 500px;
+    
+}
+
+.boxcenter {
+    flex: 1 1 1000px;
+}
+
+.boxright {
+    flex: 1 1 500px;
+}
+
+/* menu base styles*/
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center; 
+    color: wheat;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #555;
+}
+
+table, tr, td, th{
+    border:white 1px solid;
+    } 
+
+
+/* social menu base styles */
+
+a.tw {
+    background: url(../img/tw.png) no-repeat center;
+    background-size: 90%;
+}
+
+a.fb {
+    background: url(../img/fb.png) no-repeat center;
+    background-size: 50%;
+}
+
+.social a {
+    text-indent: -10000px;
+}
+
+.social {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+
+/* flex styles */
+
+nav ul.social {
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.social li {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1 1 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social {
+        margin: 0;
+    }
+}
+
